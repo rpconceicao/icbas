@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,6 @@
   .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
   :focus-visible{outline:2.5px solid var(--blue);outline-offset:2px;border-radius:4px;}
 
-  /* NAVIGATION */
   .site-nav{
     background:var(--navy);
     position:sticky;top:0;z-index:50;
@@ -72,7 +71,6 @@
   .nav-links a.current{color:var(--yellow);font-weight:600;}
   @media (max-width:900px){ .nav-links{display:none;} }
 
-  /* HERO SECTION */
   .hero{
     background:linear-gradient(180deg, var(--navy) 0%, var(--navy-soft) 100%);
     color:#fff;
@@ -105,7 +103,6 @@
     color:var(--text-on-navy);
   }
 
-  /* STATS ROW */
   .stat-row{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
@@ -128,7 +125,6 @@
     margin-top:6px;font-size:12.5px;color:var(--text-on-navy);font-weight:500;
   }
 
-  /* STICKY FILTER BAR */
   .filter-bar{
     background:#ffffff;
     position:sticky;top:72px;z-index:40;
@@ -196,7 +192,6 @@
     background:#ffffff;color:var(--navy);box-shadow:0 1px 4px rgba(0,0,0,0.08);
   }
 
-  /* MAIN LAYOUT */
   .content-section{padding:36px 0 80px;}
   .layout{
     display:grid;
@@ -209,7 +204,6 @@
     .sidebar{position:static;margin-bottom:24px;}
   }
 
-  /* SIDEBAR: THERAPEUTIC AREAS */
   .sidebar{
     position:sticky;top:160px;
     background:#ffffff;border:1px solid var(--border);border-radius:var(--radius);
@@ -238,7 +232,6 @@
   }
   .area-list li.active .cnt{background:var(--blue-tint-2);color:var(--blue);font-weight:600;}
 
-  /* RESULTS MAIN */
   .results-head{
     display:flex;align-items:baseline;justify-content:space-between;
     margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border);
@@ -247,7 +240,6 @@
   .results-count{font-size:13.5px;color:var(--text-muted);}
   .results-count b{color:var(--text);font-weight:700;}
 
-  /* AREA & CONDITION GROUPINGS */
   .area-group{margin-bottom:38px;}
   .area-head{
     display:flex;align-items:center;gap:12px;margin-bottom:16px;
@@ -272,14 +264,14 @@
     border:1px solid #e2e8f0;
     border-radius:14px;
     padding:0;
-    margin-bottom:20px;
-    box-shadow:0 2px 6px rgba(6,21,34,0.03), 0 1px 2px rgba(6,21,34,0.02);
-    transition:box-shadow .22s cubic-bezier(0.16, 1, 0.3, 1), transform .22s cubic-bezier(0.16, 1, 0.3, 1), border-color .22s ease;
+    margin-bottom:18px;
+    box-shadow:0 1px 4px rgba(6,21,34,0.03), 0 1px 2px rgba(6,21,34,0.02);
+    transition:box-shadow .2s cubic-bezier(0.16, 1, 0.3, 1), transform .2s cubic-bezier(0.16, 1, 0.3, 1), border-color .2s ease;
     overflow:hidden;
     position:relative;
   }
   .card:hover{
-    box-shadow:0 12px 28px rgba(6,21,34,0.07), 0 4px 10px rgba(6,21,34,0.03);
+    box-shadow:0 10px 24px rgba(6,21,34,0.06), 0 3px 8px rgba(6,21,34,0.03);
     border-color:#cbd5e1;
     transform:translateY(-2px);
   }
@@ -301,26 +293,26 @@
   }
 
   .card-inner{
-    padding:22px 24px 20px;
+    padding:20px 22px 18px;
   }
 
   /* Card Top Bar */
   .card-top{
     display:flex;align-items:center;justify-content:space-between;
-    gap:10px;margin-bottom:14px;flex-wrap:wrap;
+    gap:10px;margin-bottom:12px;flex-wrap:wrap;
   }
-  .card-top-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
-  .card-top-right{display:flex;align-items:center;gap:8px;}
+  .card-top-left{display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+  .card-top-right{display:flex;align-items:center;gap:7px;}
 
   .pill{
-    font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:6px;
-    display:inline-flex;align-items:center;gap:5.5px;line-height:1.2;
+    font-size:11.5px;font-weight:600;padding:3.5px 9px;border-radius:6px;
+    display:inline-flex;align-items:center;gap:5px;line-height:1.2;
   }
   .pill.status-ongoing{
     background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;
   }
   .pill.status-ongoing .pulse-dot{
-    width:7px;height:7px;border-radius:50%;background:#10b981;
+    width:6.5px;height:6.5px;border-radius:50%;background:#10b981;
     box-shadow:0 0 0 2px rgba(16,185,129,0.3);
     animation:pulseDot 2s infinite;
   }
@@ -335,7 +327,7 @@
     background:#eff6ff;color:#1e40af;border:1px solid #dbeafe;font-weight:600;
   }
   .pill.scope{
-    background:#f8fafc;color:#334155;border:1px solid #e2e8f0;font-weight:500;
+    background:#f8fafc;color:#475569;border:1px solid #e2e8f0;font-weight:500;
   }
   .pill.phase-tag{
     background:#faf5ff;color:#7e22ce;border:1px solid #f3e8ff;font-weight:600;
@@ -343,66 +335,52 @@
   }
 
   .card-title{
-    font-size:16px;line-height:1.48;font-weight:600;color:var(--navy);
-    margin:0 0 18px;letter-spacing:-0.01em;
+    font-size:15.5px;line-height:1.48;font-weight:600;color:var(--navy);
+    margin:0 0 16px;letter-spacing:-0.01em;
   }
 
-  /* Structured Metadata Grid (Principal Investigator & Sponsor) */
-  .card-meta-grid{
-    display:grid;
-    grid-template-columns:1.2fr 1fr;
-    gap:12px;
-    margin-bottom:6px;
-  }
-  @media (max-width:768px){
-    .card-meta-grid{grid-template-columns:1fr;}
-  }
-
-  .meta-card{
+  /* Principal Investigator Spotlight Card */
+  .pi-spotlight{
     background:#f8fafc;
-    border:1px solid #edf2f7;
+    border:1px solid #e9edf2;
     border-radius:10px;
     padding:12px 14px;
     display:flex;
-    align-items:flex-start;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
     gap:12px;
-    transition:background .15s ease;
   }
-  .meta-card:hover{background:#f1f5f9;}
-
-  .meta-icon-wrapper{
-    width:32px;height:32px;border-radius:8px;
+  .pi-main-block{
+    display:flex;align-items:center;gap:11px;min-width:0;
+  }
+  .pi-avatar-icon{
+    width:34px;height:34px;border-radius:8px;
     background:#ffffff;border:1px solid #e2e8f0;
     display:flex;align-items:center;justify-content:center;
-    color:var(--blue);flex-shrink:0;margin-top:1px;
+    color:var(--blue);flex-shrink:0;
     box-shadow:0 1px 2px rgba(0,0,0,0.03);
   }
-  .meta-icon-wrapper svg{width:16px;height:16px;}
-  .meta-content{flex:1;min-width:0;}
-  .meta-header-label{
-    font-size:10.5px;text-transform:uppercase;letter-spacing:0.06em;
-    font-weight:700;color:var(--text-muted);margin-bottom:4px;
-  }
-  .meta-main-value{
-    font-size:13.5px;font-weight:600;color:#0f172a;line-height:1.35;
-  }
-
-  /* Principal Investigator Details & IDs */
-  .pi-profile-dock{
-    display:flex;flex-direction:column;gap:5px;
+  .pi-avatar-icon svg{width:16px;height:16px;}
+  .pi-info{display:flex;flex-direction:column;gap:2px;min-width:0;}
+  .pi-role-label{
+    font-size:10px;text-transform:uppercase;letter-spacing:0.06em;
+    font-weight:700;color:var(--text-muted);
   }
   .pi-link{
-    color:#0f172a;text-decoration:none;font-weight:600;
-    display:inline-flex;align-items:center;gap:4px;
-    transition:color .15s;
+    color:#0f172a;text-decoration:none;font-weight:600;font-size:13.5px;
+    display:inline-flex;align-items:center;gap:4px;transition:color .15s;
   }
   .pi-link:hover{color:var(--blue);}
+  .pi-link svg{width:11px;height:11px;color:#94a3b8;transition:color .15s;}
+  .pi-link:hover svg{color:var(--blue);}
+
   .pi-credentials{
-    display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:2px;
+    display:flex;align-items:center;gap:6px;flex-wrap:wrap;
   }
   .id-badge-link{
     font-family:'IBM Plex Mono',monospace;font-size:10px;
-    padding:2px 7px;border-radius:4px;text-decoration:none;font-weight:600;line-height:1.2;
+    padding:2.5px 7px;border-radius:4px;text-decoration:none;font-weight:600;line-height:1.2;
     display:inline-flex;align-items:center;gap:3.5px;transition:all .15s ease;
   }
   .badge-orcid{
@@ -414,34 +392,50 @@
   }
   .badge-ciencia:hover{background:#3730a3;color:#ffffff;border-color:#3730a3;}
 
-  /* Footer Dock: Registries */
+  /* Footer Dock: Registries & Subtle Sponsor Metadata */
   .card-footer-dock{
-    background:#fbfcfe;
+    background:#fafbfc;
     border-top:1px solid #edf2f7;
-    padding:12px 24px;
+    padding:10px 22px;
     display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;
     gap:10px;
   }
-  .dock-registries{display:flex;align-items:center;flex-wrap:wrap;gap:8px;}
+  .dock-registries{display:flex;align-items:center;flex-wrap:wrap;gap:7px;}
   .dock-label{
-    font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;
+    font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;
     color:#64748b;margin-right:2px;display:flex;align-items:center;gap:4px;
   }
   .id-tag{
     font-family:'IBM Plex Mono',monospace;font-size:11px;color:#1e293b;
     background:#ffffff;border:1px solid #cbd5e1;border-radius:6px;
-    padding:4px 9px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;
+    padding:3.5px 8px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;
     font-weight:500;transition:all .15s ease;
   }
-  .id-tag .id-prefix{font-weight:700;color:var(--blue);font-size:10px;text-transform:uppercase;}
-  .id-tag svg{width:11px;height:11px;color:#64748b;transition:color .15s;}
+  .id-tag .id-prefix{font-weight:700;color:var(--blue);font-size:9.5px;text-transform:uppercase;}
+  .id-tag svg{width:10px;height:10px;color:#64748b;transition:color .15s;}
   a.id-tag:hover{
     background:var(--blue-tint);border-color:var(--blue-tint-2);color:var(--blue);
-    box-shadow:0 2px 6px rgba(43,72,236,0.08);
+    box-shadow:0 1px 4px rgba(43,72,236,0.08);
   }
   a.id-tag:hover svg{color:var(--blue);}
   .id-none{color:#94a3b8;background:#f8fafc;border-style:dashed;border-color:#e2e8f0;}
   .id-none .id-prefix{color:#94a3b8;}
+
+  /* Understated Sponsor representation in footer dock */
+  .dock-sponsor{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:11.5px;color:#64748b;max-width:380px;
+  }
+  .dock-sponsor-icon{
+    width:13px;height:13px;color:#94a3b8;flex-shrink:0;
+  }
+  .dock-sponsor-label{
+    font-size:10px;text-transform:uppercase;letter-spacing:0.05em;
+    font-weight:600;color:#94a3b8;
+  }
+  .dock-sponsor-value{
+    color:#475569;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
 
   .empty-state{
     text-align:center;padding:70px 20px;background:#ffffff;
@@ -449,7 +443,6 @@
   }
   .empty-state h3{font-size:18px;color:var(--text);margin-bottom:8px;font-weight:600;}
 
-  /* FOOTER */
   .site-footer{
     background:var(--navy);color:var(--text-on-navy);
     padding:36px 0;font-size:13px;border-top:1px solid rgba(255,255,255,0.08);
@@ -506,7 +499,6 @@
     <h1>Clinical Trials</h1>
     <p class="lede">A systematic record of international and national clinical studies conducted by UMIB investigators — organized by therapeutic areas, medical conditions, and public registry identifiers.</p>
     
-    <!-- 6 Exact Statistical Indicators -->
     <div class="stat-row" id="stat-row">
       <div class="stat"><div class="bar"></div><div class="num" id="stat-total">94</div><div class="lbl">Clinical Trials Total</div></div>
       <div class="stat"><div class="bar"></div><div class="num" id="stat-ongoing">52</div><div class="lbl">Ongoing Trials</div></div>
@@ -542,7 +534,6 @@
   </div>
 </section>
 
-<!-- MAIN CONTENT WITH SIDEBAR & RESULTS -->
 <section class="content-section">
   <div class="wrap">
     <div class="layout">
@@ -573,11 +564,6 @@
 </footer>
 
 <script>
-/* ==========================================================================
-   OFFICIAL UMIB CLINICAL TRIALS DATASET (94 RECORDS)
-   Conforming strictly to Column J Status sequence:
-   52 Ongoing / 42 Completed
-   ========================================================================== */
 const TRIALS = [
   {"id":1,"status":"Ongoing","area":"Neurology","condition":"Multiple Sclerosis","pi":"Ernestina Santos","ciencia_id":"3F18-4F00-289B","orcid":"0000-0003-4053-8940","title":"A phase IIIb multicenter, randomized, double-blind, placebo-controlled, study to evaluate the efficacy and safety of ocrelizumab in adults with primary progressive multiple sclerosis","scope":"International","sponsor":"Hoffmann-La Roche","nct":"NCT04035005","ctis":"2023-505980-36-00","eudract":null},
   {"id":2,"status":"Ongoing","area":"Neurology","condition":"Multiple Sclerosis","pi":"Ernestina Santos","ciencia_id":"3F18-4F00-289B","orcid":"0000-0003-4053-8941","title":"A phase III multicenter, randomized, double-blind, double-dummy, parallel-group study to evaluate the efficacy and safety of fenebrutinib compared with ocrelizumab in adult patients with primary progressive multiple sclerosis","scope":"International","sponsor":"Hoffmann-La Roche","nct":"NCT04544449","ctis":"2022-502611-10-00","eudract":null},
@@ -600,7 +586,7 @@ const TRIALS = [
   {"id":19,"status":"Completed","area":"Rheumatology & Autoimmune Diseases","condition":"Cutaneous Lupus Erythematosus (CLE)","pi":"Tiago Torres","ciencia_id":"FF1B-8834-7AE0","orcid":"0000-0003-0404-0870","title":"A Multicenter, Randomized, Double-blind, Placebo-controlled, Phase III Study to Evaluate the Efficacy and Safety of Anifrolumab in Adults with Chronic and/or Subacute Cutaneous Lupus Erythematosus who are Refractory and/or Intolerant to Antimalarial Therapy","scope":"International","sponsor":"AstraZeneca","nct":"NCT06015737","ctis":"2023-503692-24-00","eudract":null},
   {"id":20,"status":"Completed","area":"Rheumatology & Autoimmune Diseases","condition":"Myopathies & Vasculitis","pi":"Tomás Fonseca","ciencia_id":"8C1B-F9C7-F700","orcid":"0000-0002-9386-1250","title":"A 52-Week, Randomized, Double-Blind, Double-Dummy, Parallel-Group, Multi-Centre, Non-Inferiority Study To Investigate The Efficacy And Safety Of Depemokimab Compared With Mepolizumab In Adults With Relapsing Or Refractory Eosinophilic Granulomatosis With Polyangiitis (EGPA) Receiving Standard Of Care (SOC) Therapy","scope":"International","sponsor":"GlaxoSmithKline","nct":"NCT05263934","ctis":"2023-510019-20-00","eudract":null},
   {"id":21,"status":"Completed","area":"Rheumatology & Autoimmune Diseases","condition":"Myopathies & Vasculitis","pi":"António Marinho","ciencia_id":"071D-2A63-84A4","orcid":"0000-0002-3295-6723","title":"A Phase 2/3, Randomized, Double-Blinded, Placebo-Controlled, Parallel-Group, 2-Arm, Multicenter, Operationally Seamless Study to Evaluate the Efficacy, Safety, Tolerability, Pharmacodynamics, Pharmacokinetics, and Immunogenicity of Efgartigimod PH20 SC in Participants Aged 18 Years and Older With Active Idiopathic Inflammatory Myopathy","scope":"International","sponsor":"argenx","nct":"NCT05523167","ctis":"2024-512785-33-00","eudract":null},
-  {"id":22,"status":"Completed","area":"Rheumatology & Autoimmune Diseases","condition":"Myopathies & Vasculitis","pi":"António Marinho","ciencia_id":"071D-2A63-84A4","orcid":"0000-0002-3295-6723","title":"A Phase 3, Single-Arm, Multicenter, Open-label Extension of Study ARGX-113-2007 to Investigate the Long-term Safety, Tolerability, and Efficacy of Efgartigimod PH20 SC in Participants Aged 18 Years and Older With Active Idiopathic Inflammatory Myopathy","scope":"International","sponsor":"argenx","nct":"NCT05979441","ctis":"2022-502851-79-00","eudract":null},
+  {"id":22,"status":"Completed","area":"Rheumatology & Autoimmune Diseases","condition":"Myopathies & Vasculitis","pi":"António Marinho","ciencia_id":"071D-2A63-84A4","orcid":"0000-0002-3295-6723","title":"A Phase 3, Single-Arm, Multicenter, Open-label Extension of Study ARGX-113-2007 to Investigate the Long-term Safety, Tolerability, and Efficacy of Efgartigimod PH20 SC in Participants Aged 18 Years and Older With Active Idiopathic Inflopathy","scope":"International","sponsor":"argenx","nct":"NCT05979441","ctis":"2022-502851-79-00","eudract":null},
   {"id":23,"status":"Completed","area":"Dermatology","condition":"Atopic Dermatitis","pi":"Tiago Torres","ciencia_id":"FF1B-8834-7AE0","orcid":"0000-0003-0404-0870","title":"A Phase 3, Multicenter, Double-Blind Maintenance Study to Assess Long-Term Safety, Tolerability, And Efficacy Of Rocatinlimab In Adult And Adolescent Subjects With Moderate-To-Severe Atopic Dermatitis (Ad) (Rocket-Ascend)","scope":"International","sponsor":"Amgen","nct":"NCT05882877","ctis":null,"eudract":"2022-501587-17"},
   {"id":24,"status":"Completed","area":"Dermatology","condition":"Atopic Dermatitis","pi":"Tiago Torres","ciencia_id":"FF1B-8834-7AE0","orcid":"0000-0003-0404-0870","title":"A Phase 3 Randomized, Placebo-Controlled, Double-Blind Study to Evaluate Upadacitinib idolescent and Adult Subjects with Moderate to Severe Atopic Dermatitis (MEASURE UP 2)","scope":"International","sponsor":"AbbVie","nct":"NCT03607422","ctis":"2022-502936-38-00","eudract":null},
   {"id":25,"status":"Completed","area":"Dermatology","condition":"Atopic Dermatitis","pi":"Tiago Torres","ciencia_id":"FF1B-8834-7AE0","orcid":"0000-0003-0404-0870","title":"A Phase 3b/4 Randomized, Double-Blind, Dose-Flexibility Study Of Upadacitinib In Adult Subjects With Moderate To Severe Atopic Dermatitis","scope":"International","sponsor":"AbbVie","nct":"NCT05507580","ctis":null,"eudract":"2022-000434-42"},
@@ -688,7 +674,29 @@ const AREA_ORDER = [
   "Infectious Disease"
 ];
 
-/* Application State */
+/* UMIB Researcher Profile Directory Mapping */
+const UMIB_DEFAULT_URL = "https://umib.icbas.up.pt/";
+const PI_UMIB_LINKS = {
+  "Ernestina Santos": "https://umib.icbas.up.pt/members/ernestina-santos/",
+  "Ricardo Taipa": "https://umib.icbas.up.pt/members/ricardo-taipa/",
+  "António Marinho": "https://umib.icbas.up.pt/members/antonio-marinho/",
+  "Raquel Faria": "https://umib.icbas.up.pt/members/raquel-faria/",
+  "Tiago Torres": "https://umib.icbas.up.pt/members/tiago-torres/",
+  "Tomás Fonseca": "https://umib.icbas.up.pt/members/tomas-fonseca/",
+  "Andreia Campos": "https://umib.icbas.up.pt/members/andreia-campos/",
+  "Maria João Carvalho": "https://umib.icbas.up.pt/members/maria-joao-carvalho/",
+  "José Luís Silvano": "https://umib.icbas.up.pt/members/jose-luis-silvano/",
+  "Manuela Almeida": "https://umib.icbas.up.pt/members/manuela-almeida/",
+  "Patrícia Rodrigues": "https://umib.icbas.up.pt/members/patricia-rodrigues/",
+  "André Luz": "https://umib.icbas.up.pt/members/andre-luz/",
+  "Irene Marques": "https://umib.icbas.up.pt/members/irene-marques/",
+  "Mário Santos": "https://umib.icbas.up.pt/members/mario-santos/",
+  "Telma Barbosa": "https://umib.icbas.up.pt/members/telma-barbosa/",
+  "Esmeralda Martins": "https://umib.icbas.up.pt/members/esmeralda-martins/",
+  "António Araújo": "https://umib.icbas.up.pt/members/antonio-araujo/",
+  "Mariana Monteiro": "https://umib.icbas.up.pt/members/mariana-p-monteiro/"
+};
+
 let state = {
   status: 'ongoing',
   area: 'all',
@@ -702,31 +710,6 @@ function detectPhase(title){
   return match ? match[0] : null;
 }
 
-function generatePiHTML(t){
-  const primaryUrl = t.orcid
-    ? `https://orcid.org/${t.orcid}`
-    : (t.ciencia_id ? `https://www.cienciavitae.pt/portal/${t.ciencia_id}` : null);
-
-  const nameHTML = primaryUrl
-    ? `<a class="pi-link" href="${primaryUrl}" target="_blank" rel="noopener" title="Open scientific profile of ${t.pi}">${t.pi} <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>`
-    : `<span class="pi-link">${t.pi}</span>`;
-
-  const badges = [];
-  if(t.ciencia_id){
-    badges.push(`<a class="id-badge-link badge-ciencia" href="https://www.cienciavitae.pt/portal/${t.ciencia_id}" target="_blank" rel="noopener" title="Ciência ID: ${t.ciencia_id}">Ciência ID</a>`);
-  }
-  if(t.orcid){
-    badges.push(`<a class="id-badge-link badge-orcid" href="https://orcid.org/${t.orcid}" target="_blank" rel="noopener" title="ORCID: ${t.orcid}">ORCID</a>`);
-  }
-
-  return `
-    <div class="pi-profile-dock">
-      ${nameHTML}
-      <div class="pi-credentials">${badges.join('')}</div>
-    </div>
-  `;
-}
-
 function generateRegistryTag(label, val, type){
   if(!val){
     return `<span class="id-tag id-none" title="Identifier not available"><span class="id-prefix">${label}</span> —</span>`;
@@ -737,8 +720,6 @@ function generateRegistryTag(label, val, type){
     url = `https://clinicaltrials.gov/study/${cleanNct}`;
   } else if(type === 'ctis'){
     url = `https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en&EUCT=${encodeURIComponent(val)}`;
-  } else if(type === 'eudract'){
-    url = `https://www.clinicaltrialsregister.eu/ctr-search/search?query=${encodeURIComponent(val)}`;
   }
   return `
     <a class="id-tag" href="${url}" target="_blank" rel="noopener" title="View official registry record: ${val}">
@@ -763,7 +744,17 @@ function cardHTML(t){
 
   const nctTag = generateRegistryTag('NCT', t.nct, 'nct');
   const ctisTag = generateRegistryTag('CTIS', t.ctis, 'ctis');
-  const eudractTag = generateRegistryTag('EudraCT', t.eudract, 'eudract');
+
+  const umibUrl = PI_UMIB_LINKS[t.pi] || UMIB_DEFAULT_URL;
+  const badges = [];
+  if(t.ciencia_id){
+    badges.push(`<a class="id-badge-link badge-ciencia" href="https://www.cienciavitae.pt/portal/${t.ciencia_id}" target="_blank" rel="noopener" title="Ciência ID: ${t.ciencia_id}">Ciência ID</a>`);
+  }
+  if(t.orcid){
+    badges.push(`<a class="id-badge-link badge-orcid" href="https://orcid.org/${t.orcid}" target="_blank" rel="noopener" title="ORCID: ${t.orcid}">ORCID</a>`);
+  }
+
+  const sponsorVal = t.sponsor || 'Not specified';
 
   return `
     <article class="card ${isOngoing ? 'status-ongoing-card' : 'status-completed-card'}">
@@ -781,32 +772,25 @@ function cardHTML(t){
 
         <h3 class="card-title">${t.title}</h3>
 
-        <div class="card-meta-grid">
-          <!-- Principal Investigator Module -->
-          <div class="meta-card">
-            <div class="meta-icon-wrapper" title="Principal Investigator">
+        <div class="pi-spotlight">
+          <div class="pi-main-block">
+            <div class="pi-avatar-icon" title="Principal Investigator">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </div>
-            <div class="meta-content">
-              <div class="meta-header-label">Principal Investigator</div>
-              <div class="meta-main-value">${generatePiHTML(t)}</div>
+            <div class="pi-info">
+              <span class="pi-role-label">Principal Investigator</span>
+              <a class="pi-link" href="${umibUrl}" target="_blank" rel="noopener" title="Ver perfil de ${t.pi} no portal da UMIB">
+                ${t.pi}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
             </div>
           </div>
-
-          <!-- Sponsor Module -->
-          <div class="meta-card">
-            <div class="meta-icon-wrapper" title="Sponsor">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            </div>
-            <div class="meta-content">
-              <div class="meta-header-label">Sponsor</div>
-              <div class="meta-main-value">${t.sponsor || '<span style="color:#94a3b8;font-weight:400;">Not specified</span>'}</div>
-            </div>
+          <div class="pi-credentials">
+            ${badges.join('')}
           </div>
         </div>
       </div>
 
-      <!-- Footer Dock: Registries -->
       <div class="card-footer-dock">
         <div class="dock-registries">
           <span class="dock-label">
@@ -815,7 +799,12 @@ function cardHTML(t){
           </span>
           ${nctTag}
           ${ctisTag}
-          ${eudractTag}
+        </div>
+
+        <div class="dock-sponsor" title="Sponsor: ${sponsorVal}">
+          <svg class="dock-sponsor-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <span class="dock-sponsor-label">Sponsor:</span>
+          <span class="dock-sponsor-value">${sponsorVal}</span>
         </div>
       </div>
     </article>
@@ -835,8 +824,7 @@ function matches(t){
       t.sponsor,
       t.condition,
       t.nct,
-      t.ctis,
-      t.eudract
+      t.ctis
     ].filter(Boolean).join(' ').toLowerCase();
 
     if(!haystack.includes(query)) return false;
@@ -906,7 +894,6 @@ function renderResults(){
     return;
   }
 
-  // Group by Area then by Condition
   const grouped = {};
   filtered.forEach(t => {
     grouped[t.area] = grouped[t.area] || {};
@@ -970,7 +957,7 @@ document.getElementById('condition-filter').addEventListener('change', e => {
   renderResults();
 });
 
-// Initialization
+// Initial boot
 updateConditionSelect();
 renderAll();
 </script>
